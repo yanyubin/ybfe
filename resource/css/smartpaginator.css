@@ -1,0 +1,197 @@
+﻿.pager
+{
+    width: 720px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px; /*border-radius: 8px;   -moz-border-radius: 8px;*/
+}
+.pager div.short
+{
+    line-height:24px;
+    /*float: right;*/
+    /*margin: 10px 10px 0 200px;*/
+    padding: 0;
+    width: 74px;
+    display: inline;
+}
+.pager div.short input
+{
+    color:#19b5fe;
+    width: 28px;
+    height: 21px;
+    line-height: 15px;
+    border: 1px solid #19b5fe;
+    margin-left: 8px;
+    float: left;
+}
+.pager ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    margin-right: 4px;
+}
+.pager ul li
+{
+    /*display: inline;*/
+    margin-left: 2px;
+}
+.pager ul li a
+{
+    text-decoration: none;
+    display: inline-table;
+    width: 20px;
+    height: 20px;
+    line-height:18px;
+    text-align: center;
+    /*border-radius: 4px;*/
+    /*-moz-border-radius: 4px;*/
+}
+
+.pager span
+{line-height:24px;
+    margin-left: 4px;
+    /*color: White;*/
+    color:#19b5fe;
+    float: left;
+}
+.pager  .btn
+{
+    display: block;
+    width: 48px;
+    text-align: center;
+    float: left;
+    padding: 0;
+    margin: 0;
+    margin-left: 4px;
+    cursor: pointer;
+    /*border-radius: 4px;*/
+    /*-moz-border-radius: 4px;*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.pager .disabled
+{
+    background: none repeat scroll 0 0 #eef6f8;
+    border: 1px solid #eef6f8;
+    color: #1595ba;
+    display: block;
+    float: left;
+    margin-left: 6px;
+    /*padding: 2px 5px;*/
+    text-align: center;
+}
+/*green*/.green
+{
+    background-color: #4f7305;
+}
+.green.normal
+{
+    background-color: #588500;
+    color: White;
+    border: solid 1px #5f9000;
+}
+.green.active
+{
+    background-color: #344C00;
+    color: #F8EB00;
+    border: solid 1px #5f9000;
+}
+.pager.green .btn
+{
+    background-color: #588500;
+    color: White;
+    border: solid 1px #5f9000;
+}
+/*black*/.black
+{
+    background-color: #202020;
+}
+.black.normal
+{
+    background-color: #1d1d1d;
+    color: #B0D551;
+    border: solid 1px #000;
+}
+.black.active
+{
+    background-color: #333333;
+    color: White;
+    border: solid 1px #000;
+}
+.pager.black .btn
+{
+    background-color: #1d1d1d;
+    color: White;
+    border: solid 1px #000;
+}
+/*red*/.red
+{
+    background-color: #D50B07;
+}
+.red.normal
+{
+    background-color: #E71C18;
+    color: White;
+    border: solid 1px #F82723;
+}
+.red.active
+{
+    background-color: #C00D09;
+    color: White;
+    border: solid 1px #A90B08;
+}
+.pager.red .btn
+{
+    background-color: #E71C18;
+    color: White;
+    border: solid 1px #F82723;
+}
+#pagination {
+    font-size:12px;
+    height: 70px;
+    max-width:730px;
+    margin:10px auto;
+    /*margin-bottom: 10px;*/
+    /*margin-top: 10px;*/
+}
+#pagination a:hover {
+    background: none repeat scroll 0 0 #00a2e5;
+    color: #fff;
+}
+#pagination a {
+    border: 1px solid #dcdcdc;
+    color: #1595ba;
+    display: block;
+    float: left;
+    margin-left: 6px;
+    /*padding: 2px 5px;*/
+}
+#pagination.pager .disabled {
+    background: none repeat scroll 0 0 #eef6f8;
+    border: 1px solid #eef6f8;
+    color: #1595ba;
+    display: block;
+    float: left;
+    cursor:default;
+    margin-left: 6px;
+    /*padding: 2px 5px;*/
+    text-align: center;
+}
+#pagination .active{
+    background: none repeat scroll 0 0 #00a2e5;
+    border: 1px solid #dcdcdc;
+    color: #fff;
+    display: block;
+    float: left;
+    margin-left: 6px;
+    /*padding: 2px 5px;*/
+}
