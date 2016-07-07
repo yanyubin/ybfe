@@ -1,0 +1,116 @@
+
+body{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background: #51c4ff;
+    font-family: '微软雅黑';
+}
+.login-bg{
+    width: 1360px;
+    height: 768px;
+    position: relative;
+    margin: 0px auto;
+    background: url(../img/login_bg.png) no-repeat center top;
+    background-size: 100%;
+}
+.login-form{
+    position: absolute;
+    left: 50%;
+    width: 330px;
+    margin-left: 150px;
+    height: 360px;
+    margin-top: 136px;
+    background: #fff;
+}
+.login-form h4{
+    height: 52px;
+    line-height: 52px;
+    border-bottom: 2px solid #51abff;
+    font-size: 18px;
+    color: #898989;
+    font-weight: normal;
+    text-indent: 28px;
+    margin-bottom: 26px;
+}
+.login-form div{
+    width: 288px;
+    margin: 0px auto;
+}
+.login-form .text{
+    text-align: center;
+}
+.login-form .text input{
+    height:36px;
+    font-size: 14px;
+    text-indent: 1px;
+    color: #b5b5b5;
+    display: inline-block;
+    width: 286px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin: 14px auto;
+}
+.login-form .text input:focus{
+    border: 1px solid #51abff;
+}
+.login-form .autologin{
+    margin-top:14px;
+    height: 18px; 
+    line-height: 18px;
+}
+.login-form .autologin input{
+    float: left;
+    margin:2px 0 0 0;
+    display: inline-block;
+}
+.login-form .autologin span,.login-form .autologin a{
+    color:#39a0ff;
+    text-decoration: none;
+}
+.login-form .send{
+    height: 46px;
+    margin-top: 35px;
+    text-align: center;
+}
+.login-form .send button{
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    height: 46px;
+    width: 222px;
+    background: #51c4ff;
+    color: #fff;
+    font-size: 14px;
+    font-family: '微软雅黑';
+    border-radius:23px; 
+}
+.login-form .send button:active,.login-form .send button:focus{
+    border: none;
+    background: #1bb1ff;
+}
+.info{
+    position: absolute;
+    left: 50%;
+    width: 400px;
+    margin-left: -350px;
+    height:120px;
+    margin-top: 540px;
+
+}
+.info div{
+    height: 30px;
+    margin: 6px 0px;
+    line-height: 40px;
+    color: #fff;
+
+}
+.info span{
+    display: inline-block;
+    text-align: center;
+    border-radius: 15px;
+    height: 30px;
+    line-height: 30px;
+    width: 60px;
+    background: #abcdef;
+}
