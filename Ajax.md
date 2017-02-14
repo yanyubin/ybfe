@@ -52,7 +52,6 @@ XHR的主要方法有：
 6. String statusText状态文本字符串
 
 ### GET请求 
-
 ```javascript
  function createXHR(){
   var xhr = null;
@@ -72,8 +71,37 @@ XHR的主要方法有：
     console.log(data);
    }
   }
-  xhr.open("get", url , true);
+  xhr.open("GET", url , true);
   xhr.send();
  }
  
 ```
+
+### POST请求 
+```javascript
+ function createXHR(){
+  var xhr = null;
+  if(XMLHttpRequest){
+   xhr = new XMLHttpRequest();
+  }else{
+   xhr = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  return xhr;
+ }
+ function Ajax(url){
+  var xhr = createXHR();
+  // 定义回调函数
+  xhr.onreadystatechange = function() {
+   if(xhr.readyState === 4 && xhr.status === 200){
+    var data = xhr.responstText;
+    console.log(data);
+   }
+  }
+  xhr.open("POST", url , true);
+  // 设置请求头
+  xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded; charset-UTF-8');
+  xhr.send();
+ }
+ 
+```
+
