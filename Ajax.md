@@ -50,7 +50,9 @@ XHR的主要方法有：
 4. XmlDocument responseXML服务器端返回的数据 （XML对象）
 5. Number status 状态码（整数），如 200, 404
 6. String statusText状态文本字符串
+
 ### GET请求 
+
 ```javascript
  function createXHR(){
   var xhr = null;
