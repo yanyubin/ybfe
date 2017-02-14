@@ -48,5 +48,30 @@ XHR的主要方法有：
 2. Function onreadystatechange 当readyState的值改变时自动触发执行其对应的函数（回调函数）
 3. String responseText作为响应主体被返回的文本 （字符串类型）
 4. XmlDocument responseXML服务器端返回的数据 （XML对象）
-5. Number states 状态码（整数），如 200, 404
-6. String statesText状态文本字符串
+5. Number status 状态码（整数），如 200, 404
+6. String statusText状态文本字符串
+### GET请求 
+```javascript
+ function createXHR(){
+  var xhr = null;
+  if(XMLHttpRequest){
+   xhr = new XMLHttpRequest();
+  }else{
+   xhr = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  return xhr;
+ }
+ function Ajax(url){
+  var xhr = createXHR();
+  // 定义回调函数
+  xhr.onreadystatechange = function() {
+   if(xhr.readyState === 4 && xhr.status === 200){
+    var data = xhr.responstText;
+    console.log(data);
+   }
+  }
+  xhr.open("get", url , true);
+  xhr.send();
+ }
+ 
+```
