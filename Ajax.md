@@ -14,21 +14,28 @@ XHR的主要方法有：
       method: 请求方式，如post、get、delete...
       url:    请求的网络地址
       async:  是否异步
+      
 2. void send(String body)
   用于 发送请求
   参数：
       body：要发送的数据
+      
 3. void setRequestHeader(String header, String value)
   用于设置请求头
   参数：
       header： 请求的key
       value:   请求头的value
+      
 4. String getAllResponseHeaders()
   获取所有响应头
   返回执值：
      响应头数据
+
 5. String getResponseHeader(String header)
    获取响应头中指定header的值
+   
 6. void abort()
   终止请求
 ```
+#### XHR的主要属性有：
+
